@@ -66,6 +66,7 @@ function startPlaying1ans() {
 }
 
 function makeChoices1Ans() {
+    openFullscreen(document.body)
     for (let i = 1; i < 10; i++) {
         let numberEl = document.createElement("div")
         numberEl.classList.add("keypad")
@@ -165,3 +166,14 @@ function gameDone() {
     document.getElementsByClassName("optionsCont")[0].style.display = "flex";
 
 }
+
+
+function openFullscreen(elem) {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { /* Safari */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE11 */
+      elem.msRequestFullscreen();
+    }
+  }
