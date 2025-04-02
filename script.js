@@ -150,6 +150,8 @@ function gameDone() {
     document.getElementsByClassName("gameDoneScreen")[0].style.display = "flex";
     document.getElementsByClassName("questionsWrong")[0].textContent = "Wrong Questions: ",  wrong_questions.toString();
     document.getElementsByClassName("questionsRight")[0].textContent = "Right Questions: ", questionsRight.toString();
+    console.log(questionsRight)
+    console.log(wrong_questions)
 
 
 }
