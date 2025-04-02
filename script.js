@@ -110,7 +110,7 @@ function checkAnswer(target) {
     if(Number(target.target.innerHTML) == answer){
         answer=0
         questionsRight = questionsRight + 1;
-        document.getElementsByClassName("digitquestion")[0].style.setProperty('--animate-duration', '0.7s');
+        document.getElementsByClassName("digitquestion")[0].style.setProperty('--animate-duration', '2s');
 
         document.getElementsByClassName("digitquestion")[0].style.display="flex"
         document.getElementsByClassName("digitquestion")[0].classList.add("animate__animated")
