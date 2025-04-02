@@ -105,7 +105,13 @@ function checkAnswer(target) {
               const element = document.getElementsByClassName("keypad")[i];
               element.classList.remove("invalid");
             }
-
+    document.getElementsByClassName("digitquestion")[0].style.display="flex"
+    document.getElementsByClassName("digitquestion")[0].classList.add("animate__animated")
+    document.getElementsByClassName("digitquestion")[0].classList.add("animate__fadeOutUp") 
+    setTimeout(() => {
+        document.getElementsByClassName("digitquestion")[0].classList.remove("animate__animated")
+        document.getElementsByClassName("digitquestion")[0].classList.remove("animate__fadeOutUp") 
+    }, 1000);
     console.log(target.target.innerHTML)
     if(Number(target.target.innerHTML) == answer){
         answer=0
