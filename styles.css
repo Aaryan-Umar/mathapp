@@ -1,0 +1,221 @@
+.optionsCont {
+  display: flex;
+  width: 90%;
+  height: 80%;
+  margin-left: 5%;
+  margin-top: 5%;
+  position: absolute;
+  flex-wrap: wrap;
+  flex-flow: row;
+  gap: 5%;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+.optioncard {
+  cursor: pointer;
+  border-style: solid;
+  width: 30%;
+  display: flex;
+  height: 254px;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  font-family: "Delius", cursive;
+  font-weight: 800;
+  font-size: 190%;
+  flex-wrap: nowrap;
+  word-break: keep-all;
+  white-space: nowrap;
+  font-style: normal;
+  align-items: center;
+  justify-content: center;
+  
+    
+}
+
+.optionsTitle {
+  display: flex;
+  justify-self: center;
+  -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+  
+    /*
+       Introduced in IE 10.
+       See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+     */
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.optioncard:hover {
+transform: translateY(-2.1rem);}
+
+* {
+  transition: all;
+  transition-duration: 500ms;
+}
+
+
+.digitansCont, .digitdigitCont {
+  display: flex;
+  border-style: solid;
+  height: 90%;
+  width: 70%;
+  position: absolute;
+  top: 4%;
+  justify-content: center;
+}
+
+.digitquestion {
+    margin-top: 1%;
+    font-family: "Delius", cursive;
+      font-weight: 500;
+      font-size: 700%;
+  display: flex;
+
+  
+}
+
+.keypad {
+  position: relative;
+  width: 25%;
+  height: 17%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Delius", cursive;
+  font-weight: 500;
+  font-size: 400%;
+  border-style: solid;
+  background-color: rgb(65, 160, 243);
+  color: rgb(227, 225, 222);
+  cursor: pointer;
+  -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+  
+    /*
+         Introduced in IE 10.
+         See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+       */
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.keypadCont {
+  margin-top: 15%;
+  display: flex;
+  justify-content: center;
+  flex-basis: 150%;
+  gap: 5%;
+  width: 80%;
+  height: 70%;
+  position: absolute;
+  bottom: 0;
+  flex-wrap: wrap;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    left: -10px;
+  }
+
+  16% {
+    left: 9px;
+  }
+
+  33% {
+    left: -6px;
+  }
+
+  50% {
+    left: 5px;
+  }
+
+  66% {
+    left: -2px;
+  }
+
+  83% {
+    left: 1px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+@keyframes shake {
+  0% {
+    left: -10px;
+  }
+
+  16% {
+    left: 9px;
+  }
+
+  33% {
+    left: -6px;
+  }
+
+  50% {
+    left: 5px;
+  }
+
+  66% {
+    left: -2px;
+  }
+
+  83% {
+    left: 1px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+.keypad.invalid {
+  outline-color: red;
+  -webkit-animation-delay: 5ms;
+  animation-delay: 5ms;
+  -webkit-animation: shake .6s linear;
+  animation: shake .6s linear;
+}
+.keypad.invalid2 {
+    outline-color: red;
+      -webkit-animation-delay: 5ms;
+      animation-delay: 5ms;
+      -webkit-animation: shake .6s linear;
+      animation: shake .6s linear;
+}
+
+/* also keyframes and -moz-keyframes */
+
+
+.questionsRight {
+    font-family: "Delius", cursive;
+      font-weight: 800;
+      font-size: 190%;
+
+}
+.questionsWrong {
+    font-family: "Delius", cursive;
+      font-weight: 800;
+      font-size: 190%;
+}
+.gameDoneScreen {
+  width: 70%;
+  height: 90%;
+}
+.frame {
+  border-style: solid;
+  width: 60%;
+  height: 70%;
+}
