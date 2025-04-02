@@ -148,8 +148,8 @@ function removeKeypad() {
 function gameDone() {
     document.getElementsByClassName("digitansCont")[0].style.display = "none";
     document.getElementsByClassName("gameDoneScreen")[0].style.display = "flex";
-    document.getElementsByClassName("questionsWrong")[0].textContent = "Wrong Questions: ",  wrong_questions;
-    document.getElementsByClassName("questionsRight")[0].textContent = "Right Questions", questionsRight;
+    document.getElementsByClassName("questionsWrong")[0].textContent = "Wrong Questions: ",  wrong_questions.toString();
+    document.getElementsByClassName("questionsRight")[0].textContent = "Right Questions: ", questionsRight.toString();
 
 
 }
