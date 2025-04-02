@@ -110,7 +110,7 @@ function checkAnswer(target) {
     if(Number(target.target.innerHTML) == answer){
         answer=0
         questionsRight = questionsRight + 1;
-        document.getElementsByClassName("digitquestion")[0].style.setProperty('--animate-duration', '0.7s');
+        document.getElementsByClassName("digitquestion")[0].style.setProperty('--animate-duration', '2s');
 
         document.getElementsByClassName("digitquestion")[0].style.display="flex"
         document.getElementsByClassName("digitquestion")[0].classList.add("animate__animated")
@@ -118,8 +118,9 @@ function checkAnswer(target) {
         setTimeout(() => {
             document.getElementsByClassName("digitquestion")[0].classList.remove("animate__animated")
             document.getElementsByClassName("digitquestion")[0].classList.remove("animate__fadeOutUp") 
+            makeQuestion1ans()
+
         }, 300);
-        makeQuestion1ans()
     } else {
         wrong_questions = wrong_questions + 1
 
