@@ -109,10 +109,10 @@ function checkAnswer(target) {
     console.log(target.target.innerHTML)
     if(Number(target.target.innerHTML) == answer){
         answer=0
-        questionsRight++
+        questionsRight = questionsRight + 1;
     makeQuestion1ans()
     } else {
-        wrong_questions++
+        wrong_questions = wrong_questions + 1
 
         for (let i = 0; i < document.getElementsByClassName("keypad").length; i++) {
             document.getElementsByClassName("keypad")[i].classList.add("invalid");            
