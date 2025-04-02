@@ -112,11 +112,12 @@ function checkAnswer(target) {
     makeQuestion1ans()
     } else {
         wrong_questions++
-        new Audio("error-4-199275.mp3").play();
 
         for (let i = 0; i < document.getElementsByClassName("keypad").length; i++) {
             document.getElementsByClassName("keypad")[i].classList.add("invalid");            
         }
+                new Audio("error-4-199275.mp3").play();
+
         setTimeout(() => {
                         for (
                           let i = 0;
