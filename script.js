@@ -77,12 +77,13 @@ function makeChoices1Ans() {
 }
 
 function makeQuestion1ans() {
-    if(questionsCount % 4 == 0 && questionsCount != 0) gameDone()
-    times++
-    let addend1 = Math.round(Math.random() * 5)
-    let addend2 = Math.round(Math.random() * 5)
-    if(addend1 == 0) addend1+=3
-    if(addend2 == 0) addend2 = Math.round(Math.random() * 4)
+    if(questionsCount % 4 == 0 && questionsCount != 0) gameDone();
+    times++;
+    let addend1 = Math.round(Math.random() * 5);
+    let addend2 = Math.round(Math.random() * 5);
+    if(addend1 == 0) addend1+=3;
+    if(addend2 == 0) addend2 = Math.round(Math.random() * 4);
+    if(addend1 == 5 && addend2 == 5) addend2 = 1;
     if(times % 4 == 0) addend2 = 1; addend1 + 2
     answer = addend1 + addend2;
     document.getElementsByClassName("digitquestion")[0].textContent = addend1 + " + " + addend2
