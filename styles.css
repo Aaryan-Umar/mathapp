@@ -211,10 +211,15 @@ transform: translateY(-2.1rem);}
       font-size: 190%;
 }
 .gameDoneScreen {
+  justify-content: center;
+  
   width: 70%;
   height: 90%;
 }
 .frame {
+  justify-content: center;
+  align-items: center;
+  
   border-style: solid;
   width: 60%;
   height: 70%;
