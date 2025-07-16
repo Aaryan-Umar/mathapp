@@ -41,7 +41,7 @@ function submitAnswer(answer) {
     playWrongSound();
     setTimeout(() => {
         clearAnswer();
-    }, 400);
+    }, 1100);
   }
 }
 

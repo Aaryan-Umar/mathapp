@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(135deg, #C2FFD8, #465EFB);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.english-container {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  max-width: 500px;
+}
+
+h1 {
+  color: #465efb;
+  margin-bottom: 20px;
+}
+
+.card {
+  margin: 20px 0;
+}
+
+#word {
+  font-size: 2em;
+  color: #F6416C;
+}
+
+#image {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin: 15px 0;
+}
+
+#sentence {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+button {
+  font-size: 1em;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #465efb;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #7A81FF;
+}
