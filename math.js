@@ -34,7 +34,7 @@ function submitAnswer(answer) {
        setTimeout(() => {
         spawnNewQuestion();
         clearAnswer();
-    }, 700);
+    }, 1100);
   } else {
     result.textContent = "❌ Try again, you can do it!";
     result.style.color = "red";
