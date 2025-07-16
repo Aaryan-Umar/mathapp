@@ -82,6 +82,11 @@ body {
 }
 
 .keypad {
+    margin-left:20%;
+    position: relative;
+    width: 20vw;
+    align-items: center;
+    
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
