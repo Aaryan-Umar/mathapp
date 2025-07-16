@@ -10,7 +10,7 @@ function spawnNewQuestion() {
     if(addend2 == 0) addend2 = Math.round(Math.random() * 4);
     if(addend1 == 5 && addend2 == 5) addend2 = 1;
     currentAns = addend1 + addend2;
-    result.textContent = mathPrefix + addend1.toString() + " + " + addend2.toString + " ?";
+    document.getElementsByClassName("question")[0].textContent = mathPrefix + addend1.toString() + " + " + addend2.toString + " ?";
 
 }function press(num) {
   const input = document.getElementById("answerInput");
@@ -39,6 +39,9 @@ function submitAnswer(answer) {
     result.textContent = "❌ Try again, you can do it!";
     result.style.color = "red";
     playWrongSound();
+    setTimeout(() => {
+        clearAnswer();
+    }, 400);
   }
 }
 
