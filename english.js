@@ -28,8 +28,49 @@ const words = [
     word: "bed",
     image: "images/bed.png",
     sentence: "I sleep in my cozy bed at night."
+  },
+  {
+    word: "tv",
+    image: "images/tv.png",
+    sentence: "I watched cartoons on the TV."
+  },
+  {
+    word: "water",
+    image: "images/water.png",
+    sentence: "Water helps me stay healthy."
+  },
+  {
+    word: "ball",
+    image: "images/ball.png",
+    sentence: "I like to play with a ball."
+  },
+  {
+    word: "cup",
+    image: "images/cup.png",
+    sentence: "I drank milk from my cup."
+  },
+  {
+    word: "sit",
+    image: "images/sit.png",
+    sentence: "Please sit on the chair."
+  },
+  {
+    word: "leg",
+    image: "images/leg.png",
+    sentence: "She hurt her leg while running."
+  },
+  {
+    word: "rat",
+    image: "images/rat.png",
+    sentence: "The rat ran under the table."
+  },
+  {
+    word: "hat",
+    image: "images/hat.png",
+    sentence: "I wore a big red hat."
   }
 ];
+
 
 let currentIndex = 0;
 
