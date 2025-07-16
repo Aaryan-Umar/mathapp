@@ -14,7 +14,7 @@ function spawnNewQuestion() {
 
 }
 function checkAnswer(answer) {
-    console.log(answer)
+    console.log(answer.textContent)
     answer=answer.innerHTML;
   const result = document.getElementById("result");
   if (answer === 5) {
