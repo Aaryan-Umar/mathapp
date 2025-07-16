@@ -12,26 +12,37 @@ function spawnNewQuestion() {
     answer = addend1 + addend2;
     result.textContent = mathPrefix + addend1.toString() + " + " + addend2.toString;
 
+}function press(num) {
+  const input = document.getElementById("answerInput");
+  input.value += num;
 }
-function checkAnswer(answer) {
-    console.log(answer.textContent)
-    answer=answer.innerHTML;
+
+function clearAnswer() {
+  document.getElementById("answerInput").value = "";
+  document.getElementById("result").textContent = "";
+}
+
+function submitAnswer() {
+  const answer = parseInt(document.getElementById("answerInput").value);
   const result = document.getElementById("result");
+
   if (answer === 5) {
-    result.textContent = "🎉 Correct! Great job!";
+    result.textContent = "🎉 Correct! You're awesome!";
     result.style.color = "green";
-        setTimeout(() => {
+    playRightSound()
+       setTimeout(() => {
         spawnNewQuestion()
     }, 700);
   } else {
-    result.textContent = "❌ Oops! Try again.";
+    result.textContent = "❌ Try again, you can do it!";
     result.style.color = "red";
-    playWrongSound()
-
+    playWrongSound();
   }
 }
+
+
 function playRightSound() {
-    rightSound.play()
+    rightSound.play();
 }
 function playWrongSound() {
 

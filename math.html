@@ -3,22 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ali Math</title>
+  <title>Math Zone</title>
   <link rel="stylesheet" href="math.css"/>
 </head>
 <body>
   <div class="math-container">
-    <h1>➕ Welcome to the Math Zone!</h1>
-    <div class="question-box">
-      <p id="questionP">🧠 What is 2 + 3?</p>
-      <button onclick="checkAnswer(this)">4</button>
-      <button onclick="checkAnswer(this)">5</button>
-      <button onclick="checkAnswer(this)">6</button>
+    <h1>🧮 Math Zone</h1>
+    <p class="question">What is 2 + 3?</p>
+    
+    <input type="text" id="answerInput" readonly />
+
+    <div class="keypad">
+      <button onclick="press(1)">1</button>
+      <button onclick="press(2)">2</button>
+      <button onclick="press(3)">3</button>
+      <button onclick="press(4)">4</button>
+      <button onclick="press(5)">5</button>
+      <button onclick="press(6)">6</button>
+      <button onclick="press(7)">7</button>
+      <button onclick="press(8)">8</button>
+      <button onclick="press(9)">9</button>
+      <button onclick="press(0)">0</button>
+      <button onclick="clearAnswer()">⛔ Clear</button>
+      <button onclick="submitAnswer()">✅ Submit</button>
     </div>
+
     <p id="result"></p>
     <button class="back-btn" onclick="goBack()">🔙 Back to Menu</button>
   </div>
 
-  <script src="math.js" defer></script>
+  <script src="math.js"></script>
 </body>
 </html>

@@ -67,3 +67,40 @@ body {
 .back-btn:hover {
   background-color: #f6416c;
 }
+
+
+/* Keep styles from the previous version and add/adjust below */
+
+#answerInput {
+  font-size: 2em;
+  width: 80%;
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px;
+  border: 2px solid #76c7c0;
+  border-radius: 10px;
+}
+
+.keypad {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.keypad button {
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  background-color: #76c7c0;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.keypad button:hover {
+  transform: scale(1.1);
+  background-color: #ffd93d;
+}
