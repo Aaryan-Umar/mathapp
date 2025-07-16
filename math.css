@@ -23,7 +23,7 @@ body {
 }
 
 .question-box p {
-  font-size: 1.5em;
+  font-size: 5em;
   margin-bottom: 20px;
 }
 
@@ -68,9 +68,9 @@ body {
   background-color: #f6416c;
 }
 
-
-/* Keep styles from the previous version and add/adjust below */
-
+.zero-button {
+  grid-column: 2 / 3; /* Places it in the center column */
+}
 #answerInput {
   font-size: 2em;
   width: 80%;
@@ -89,6 +89,12 @@ body {
     
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+
+    display: grid;
+  grid-template-columns: repeat(3, 80px); /* Three buttons per row */
   justify-content: center;
   gap: 10px;
   margin-top: 20px;
