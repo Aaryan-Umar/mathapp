@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Math Zone</title>
+  <link rel="stylesheet" href="math.css"/>
+</head>
+<body>
+  <div class="math-container">
+    <h1>➕ Welcome to the Math Zone!</h1>
+    <div class="question-box">
+      <p>🧠 What is 2 + 3?</p>
+      <button onclick="checkAnswer(4)">4</button>
+      <button onclick="checkAnswer(5)">5</button>
+      <button onclick="checkAnswer(6)">6</button>
+    </div>
+    <p id="result"></p>
+    <button class="back-btn" onclick="goBack()">🔙 Back to Menu</button>
+  </div>
+
+  <script src="math.js"></script>
+</body>
+</html>

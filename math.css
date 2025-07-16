@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(135deg, #FFF6B7, #F6416C);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.math-container {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.math-container h1 {
+  color: #ff5e57;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.question-box p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.question-box button {
+  font-size: 1.2em;
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #76c7c0;
+  color: white;
+  transition: transform 0.2s;
+}
+
+.question-box button:hover {
+  transform: scale(1.1);
+  background-color: #ffd93d;
+}
+
+#result {
+  font-size: 1.4em;
+  margin-top: 20px;
+  color: #333;
+}
+
+.back-btn {
+  margin-top: 30px;
+  font-size: 1em;
+  padding: 10px 20px;
+  background-color: #ff5e57;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background-color: #f6416c;
+}
