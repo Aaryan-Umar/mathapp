@@ -10,10 +10,12 @@ function spawnNewQuestion() {
     if(addend1 == 5 && addend2 == 5) addend2 = 1;
     if(times % 4 == 0) addend2 = 1; addend1 + 2
     answer = addend1 + addend2;
-    result.textContent = mathPrefix + addend1.toString() + " + " + addend2.toString
+    result.textContent = mathPrefix + addend1.toString() + " + " + addend2.toString;
 
 }
 function checkAnswer(answer) {
+    console.log(answer)
+    answer=answer.innerHTML;
   const result = document.getElementById("result");
   if (answer === 5) {
     result.textContent = "🎉 Correct! Great job!";
