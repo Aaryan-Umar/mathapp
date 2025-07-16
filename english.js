@@ -13,6 +13,21 @@ const words = [
     word: "sun",
     image: "images/sun.png",
     sentence: "The sun is bright today."
+  },
+  {
+    word: "fan",
+    image: "images/fan.png",
+    sentence: "The fan keeps me cool."
+  },
+  {
+    word: "cat",
+    image: "images/cat.png",
+    sentence: "The cat is sleeping on the mat."
+  },
+  {
+    word: "bed",
+    image: "images/bed.png",
+    sentence: "I sleep in my cozy bed at night."
   }
 ];
 
