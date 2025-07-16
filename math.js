@@ -10,7 +10,7 @@ function spawnNewQuestion() {
     if(addend2 == 0) addend2 = Math.round(Math.random() * 4);
     if(addend1 == 5 && addend2 == 5) addend2 = 1;
     currentAns = addend1 + addend2;
-    document.getElementsByClassName("question")[0].textContent = mathPrefix + addend1.toString() + " + " + addend2.toString + " ?";
+    document.getElementsByClassName("question")[0].textContent = mathPrefix + addend1.toString() + " + " + addend2.toString() + " ?";
 
 }function press(num) {
   const input = document.getElementById("answerInput");
