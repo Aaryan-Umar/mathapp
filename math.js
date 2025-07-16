@@ -9,9 +9,8 @@ function spawnNewQuestion() {
     if(addend1 == 0) addend1+=3;
     if(addend2 == 0) addend2 = Math.round(Math.random() * 4);
     if(addend1 == 5 && addend2 == 5) addend2 = 1;
-    if(times % 4 == 0) addend2 = 1; addend1 + 2
     currentAns = addend1 + addend2;
-    result.textContent = mathPrefix + addend1.toString() + " + " + addend2.toString;
+    result.textContent = mathPrefix + addend1.toString() + " + " + addend2.toString + " ?";
 
 }function press(num) {
   const input = document.getElementById("answerInput");
