@@ -80,9 +80,34 @@ body {
   border: 2px solid #76c7c0;
   border-radius: 10px;
 }
+    .number-line {
+      margin: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      padding: 10px 0;
+    }
 
+    .number-line::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: #333;
+      z-index: 0;
+    }
+
+    .number {
+      position: relative;
+      background: #fff;
+      padding: 4px 8px;
+      z-index: 1;
+      font-weight: bold;
+    }
 .keypad {
-    margin-left:9%;
+    margin-left:20%;
     position: relative;
     width: 20vw;
     align-items: center;
