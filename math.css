@@ -7,7 +7,11 @@ body {
   align-items: center;
   height: 100vh;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .math-container {
   background: white;
   padding: 40px;
@@ -107,8 +111,7 @@ body {
       font-weight: bold;
     }
 .keypad {
-    margin-left:20%;
-    position: relative;
+    margin-left:15%;
     width: 20vw;
     align-items: center;
     
@@ -117,6 +120,7 @@ body {
   justify-content: center;
   gap: 10px;
   margin-top: 20px;
+  justify-self: center;
 
     display: grid;
   grid-template-columns: repeat(3, 80px); /* Three buttons per row */
@@ -142,17 +146,13 @@ body {
 }
 
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 
 
 .number-linecontainer{
   width: 100%;
-  height: 100vh;
+  height: 90%;
 
   display: grid;
   place-items: center;
@@ -195,7 +195,7 @@ body {
 }
 
 .number-line {
-  width: 100%;
+  width: 50%;
   height: 5em;
   position: relative;
   --child: 3;
@@ -276,4 +276,10 @@ body {
       }
     }
   }
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
 }
