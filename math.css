@@ -204,7 +204,7 @@ body {
 }
 
 .number-line {
-  width: 50%;
+  width: 90%;
   height: 5em;
   position: relative;
   --child: 3;
